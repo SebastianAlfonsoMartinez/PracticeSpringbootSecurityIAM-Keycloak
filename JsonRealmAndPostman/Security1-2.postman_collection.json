@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "7a35df30-8199-4fac-8bf7-87389d04d0e3",
+		"name": "Security1/2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21694548"
+	},
+	"item": [
+		{
+			"name": "ParcialBackEndSebastianAlfonso",
+			"item": [
+				{
+					"name": "Bills",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJ5UWNHWFhaWkJzbzBuWkdwRUNjUllxMmxBSkUxRkVrbnBkaVNxbS1ydzFvIn0.eyJleHAiOjE2OTg3MTU3NjcsImlhdCI6MTY5ODcxNTQ2NywiYXV0aF90aW1lIjoxNjk4NzE1NDY2LCJqdGkiOiI1ZTZjYTIzYS1mODExLTRkZDQtODU4Yy1iNmFlZmQyMmE4MjQiLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvcmVhbG1zL2RoIiwiYXVkIjpbImJhY2tlbmQiLCJhY2NvdW50Il0sInN1YiI6ImQ3NTMxMzkxLWQ0MzMtNDM3MS04ZDMwLWRjMWFjMTIyNjFhMSIsInR5cCI6IkJlYXJlciIsImF6cCI6ImFwaS1nYXRld2F5LWNsaWVudCIsInNlc3Npb25fc3RhdGUiOiJjYWExMjZiZC1hN2MzLTRmMTItOTVjNi0wNmM2ZjgxMDYxOGQiLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbIi8qIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJkZWZhdWx0LXJvbGVzLWRoIiwiYXBwX3VzZXIiLCJvZmZsaW5lX2FjY2VzcyIsImFkbWluIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJiYWNrZW5kIjp7InJvbGVzIjpbInVzZXIiXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZW1haWwgYWNjb3VudCBwcm9maWxlIiwic2lkIjoiY2FhMTI2YmQtYTdjMy00ZjEyLTk1YzYtMDZjNmY4MTA2MThkIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJ1c2VyIiwiZ2l2ZW5fbmFtZSI6IiIsImZhbWlseV9uYW1lIjoiIn0.pNGnnyDMP7OmSTkLY4bjEU9Exz-ZTUhuNer_pmWQCR5Pk3j-PZjaHAKhtgqQXlDThjwkJPs0dlqZvDW6UANTvwwtMVCjsGaI3LIvMIXv5Hf2NOMOj9URSp2W6iAW852eT8wpdwMoJ6l8dTZ4IKjsWfWk0YAZjz6wsIFw5bAWK-lWFuiiPekK1ouj33R4N6bMHkpXmsBVJCuNKjUua--G3ttqxEkH0dDLYvWvmGleD2-xNRDqiEkrzcAKu_AJxMBrSwc4Kq7L6cvTqSu1keGN79aP-Oybca9qHoxSWLz0t6tifydm-YL8JNYp1d5r85x1ZoSLOMQizxptP-A2vn_DOg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8086/hello/group",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8086",
+							"path": [
+								"hello",
+								"group"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Token Postman",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "scope",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "clientSecret",
+									"value": "mNC8mJQBKMBCKTRgGuAwPfi56IqAniSt",
+									"type": "string"
+								},
+								{
+									"key": "accessTokenUrl",
+									"value": "http://localhost:8080/realms/dh/protocol/openid-connect/token",
+									"type": "string"
+								},
+								{
+									"key": "authUrl",
+									"value": "http://localhost:8080/realms/dh/protocol/openid-connect/auth",
+									"type": "string"
+								},
+								{
+									"key": "tokenName",
+									"value": "hello-token",
+									"type": "string"
+								},
+								{
+									"key": "clientId",
+									"value": "api-gateway-client",
+									"type": "string"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "https://oauth.pstmn.io/v1/browser-callback",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8086/hello/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8086",
+							"path": [
+								"hello",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Introspec Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJtc0FmUG90aWhPNlBmdlUtODI3SkFWa2hCRUo5eVhMMHRBNWJlLXQyTnJVIn0.eyJleHAiOjE2OTkzMTYyNDcsImlhdCI6MTY5OTMxNTk0NywiYXV0aF90aW1lIjoxNjk5MzE1OTQ3LCJqdGkiOiI1Nzg2OWYyNC00YjI4LTQzMTktOWM0Yy1kN2VhYjg1ZGYxMmIiLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvcmVhbG1zL3NlYmFzdGlhbiIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJmYTExMWZjMy05OWJkLTQ3NjUtOTE1OS03NWUzOGMyMTE2MDgiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJlLWNvbW1lcmNlLWdhdGV3YXktY2xpZW50Iiwic2Vzc2lvbl9zdGF0ZSI6Ijc3MDJmMGNlLWUwMTktNDcyZC1hNmJhLTM0YjI2NWY5MjIyZSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cHM6Ly9vYXV0aC5wc3Rtbi5pbyIsImh0dHA6Ly9sb2NhbGhvc3Q6OTA5MCJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiIsImRlZmF1bHQtcm9sZXMtc2ViYXN0aWFuIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiZS1jb21tZXJjZS1nYXRld2F5LWNsaWVudCI6eyJyb2xlcyI6WyJVU0VSIl19LCJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwgc2NvcGUtY2xpZW50Iiwic2lkIjoiNzcwMmYwY2UtZTAxOS00NzJkLWE2YmEtMzRiMjY1ZjkyMjJlIiwiR3JvdXAiOlsiL3VzZXItZ3JvdXAiXSwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoiU2ViYXN0aWFuIEFsZm9uc28iLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJzZWJhc3RpYW4iLCJnaXZlbl9uYW1lIjoiU2ViYXN0aWFuIiwiZmFtaWx5X25hbWUiOiJBbGZvbnNvIiwiZW1haWwiOiJzZWJhc0BkaC5jb20ifQ.PpywWejY9zFSyBR8stWWG81HgLIpv87FeSX_dW29SgfeOYBaUxWQI-AbpJP35efeAWOoHtExuCliF0fU-bL0oJo_V7hqfnFngHqJzvEXJYYOUzOAGd-OfWaBJHFylEZOl1oXxSB2c5fwv1bSu8kXguwbtqnTiME-6Nz5Six3z88z0urMmK6n8TTwy0iU-SOHBWw_tfhFEgVt_XY7BvrThsgLg_9sNgg5Kv6TmDAkk551R6eK1trIOjaFjkZYdlKKWJ7hSQoah0dfAxjcYWOLUAwZGiZgvWs6aZyloG6DVOC1RaW8_WjE6FtvmisEDS5rL36hRZcLFlxxzVKGnPvdjw",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "e-commerce-gateway-client",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "ZG4rc9to0ChKFeCHo81QZsWPODU2XbYf",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/realms/sebastian/protocol/openid-connect/token/introspect",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"realms",
+								"sebastian",
+								"protocol",
+								"openid-connect",
+								"token",
+								"introspect"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
