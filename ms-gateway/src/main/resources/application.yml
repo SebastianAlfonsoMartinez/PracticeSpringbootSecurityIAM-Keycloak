@@ -17,12 +17,19 @@ spring:
     name: ms-gateway
   cloud:
     gateway:
-      default-filters: TokenRelay
+      default-filters:
+      - TokenRelay
       routes:
         - id: ms-bill
           uri: lb://ms-bill
           predicates:
             - Path=/api/v1/**
+          filters:
+            - StripPrefix=2
+        - id: ms-users
+          uri: lb://ms-users
+          predicates:
+            - Path=/api/v2/**
           filters:
             - StripPrefix=2
   security:
